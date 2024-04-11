@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Register Page</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="registerstyles.css">
+    <body>
+        <div class="navbar">
+            <a href="Landingpage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="recipe view page.php">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <img class="logo" src="logo.png" alt="ToD logo" width="200px" height="200px">
+        <h1>Welcome to Taste of Delight!!!</h1>/
+        <br><br>
+                       
+        <form action="Registercode.php" method="POST">
+            <table border="0" width="30%" height="50%" align="center">
+                <tr>
+                    <td colspan="2" align="center"><h4>Please Register here</h4></td>
+                </tr>
+                <tr>
+                    <td> <label>First Name: </label></td>
+                    <td><input type="text" name="fname"></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name: </label></td>
+                    <td><input type="text" name="lname"></td>
+                </tr>
+                <tr>
+                    <td><label>Email Id: </label></td>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label>Password: </label></td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password: </label></td>
+                    <td><input type="password" name="confirmpassword"></td>
+                </tr>
+                <tr>
+                    <td align=right><button type="submit" name="register_btn">Register Now</button></td>
+                    <td><button type="reset">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

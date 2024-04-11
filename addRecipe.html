@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Recipe</title>
+    <link rel="stylesheet" type="text/css" href="addrecipestyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome to Taste of Delight!!!</h1>
+    <br>
+    <h3 style="text-align: center;">Fill the form to add a new recipe</h3>
+    
+    <form method="post" action="addrecipe.php" enctype="multipart/form-data">
+        <label>Chef Name:</label>
+        <input type="text" name="chefname" /><br><br>
+        <label>Category:&nbsp;&nbsp;</label>
+        <input type="text" name="category" /> <br><br>
+        <label>Recipe Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" name="RecipeName" /> <br><br>
+        <label>Ingredients:&nbsp;&nbsp;&nbsp;</label>
+        <textarea name="Ingredients" id="Ingredients" rows="5" cols="100"> </textarea><br><br>
+        <label>Directions:&nbsp;&nbsp;&nbsp;</label>
+        <textarea name="Directions" id="Directions" rows="10" cols="100"> </textarea><br><br>
+        <label>Upload Image:&nbsp;&nbsp;&nbsp;</label>
+        <input type="file" name="image" accept="image/*"><br><br>
+        <input type="submit" name="submit" value="Submit" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Reset" />
+    </form>
+</body>
+</html>
